@@ -1,0 +1,40 @@
+# ==========================================
+# Environment Variables & Secrets (CRITICAL)
+# ==========================================
+.env
+*.env
+.env.*
+!.env.example
+
+# ==========================================
+# Python (Backend)
+# ==========================================
+__pycache__/
+*.py[cod]
+*.so
+.Python
+.venv/
+venv/
+env/
+.pytest_cache/
+.coverage
+htmlcov/
+*.db
+*.sqlite3
+
+# ==========================================
+# Node/React (Frontend)
+# ==========================================
+node_modules/
+dist/
+build/
+.vite/
+*.tsbuildinfo
+
+# ==========================================
+# IDE & OS Files
+# ==========================================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

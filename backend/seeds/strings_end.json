@@ -1,0 +1,88 @@
+{
+  "assessment": {
+    "kind": "SECTION_END",
+    "section_slug": "strings",
+    "title": "Strings — Section-End Assessment",
+    "description": "12 MCQs. Passing threshold 70% is required alongside 8/10 problems completed to complete the available roadmap.",
+    "total_marks": 12,
+    "pass_ratio": 0.70,
+    "duration_minutes": 20
+  },
+  "distribution": {
+    "by_topic": { "strings": 12 },
+    "by_difficulty": { "EASY": 4, "MEDIUM": 6, "HARD": 2 }
+  },
+  "questions": [
+    { "order": 1, "topic": "strings", "difficulty": "EASY", "marks": 1,
+      "text": "Reversing the string \"hello\" yields:",
+      "options": ["\"hello\"", "\"olleh\"", "\"ello\"", "\"h\""],
+      "correct_index": 1,
+      "explanation": "Reversing the characters of 'hello' yields 'olleh'." },
+
+    { "order": 2, "topic": "strings", "difficulty": "EASY", "marks": 1,
+      "text": "Is \"racecar\" a palindrome?",
+      "options": ["Yes", "No", "Only if case-sensitive", "Cannot be determined"],
+      "correct_index": 0,
+      "explanation": "'racecar' reads identically forwards and backwards." },
+
+    { "order": 3, "topic": "strings", "difficulty": "EASY", "marks": 1,
+      "text": "Are \"anagram\" and \"nagaram\" anagrams of each other?",
+      "options": ["Yes", "No", "Only if sorted first", "Only if they have the same prefix"],
+      "correct_index": 0,
+      "explanation": "Both contain the same letters with the same multiplicities." },
+
+    { "order": 4, "topic": "strings", "difficulty": "EASY", "marks": 1,
+      "text": "Defanging the IP address \"1.1.1.1\" produces:",
+      "options": ["\"1.1.1.1\"", "\"1[.]1[.]1[.]1\"", "\"1-1-1-1\"", "\"1111\""],
+      "correct_index": 1,
+      "explanation": "Defanging replaces each '.' with the bracketed literal '[.]'." },
+
+    { "order": 5, "topic": "strings", "difficulty": "MEDIUM", "marks": 1,
+      "text": "With jewels = \"aA\" and stones = \"aAAbbbb\", how many stones are jewels?",
+      "options": ["2", "3", "4", "5"],
+      "correct_index": 1,
+      "explanation": "One 'a' and two 'A's match the jewel set, totalling 3." },
+
+    { "order": 6, "topic": "strings", "difficulty": "MEDIUM", "marks": 1,
+      "text": "Can the ransom note \"aab\" be constructed from the magazine \"aabbc\"?",
+      "options": ["Yes", "No", "Only if the case matches", "Only if sorted first"],
+      "correct_index": 0,
+      "explanation": "The magazine has at least two 'a's and one 'b', which are exactly the required counts." },
+
+    { "order": 7, "topic": "strings", "difficulty": "MEDIUM", "marks": 1,
+      "text": "For haystack = \"sadbutsad\" and needle = \"sad\", the index of the first occurrence is:",
+      "options": ["0", "3", "-1", "6"],
+      "correct_index": 0,
+      "explanation": "The needle 'sad' begins at index 0." },
+
+    { "order": 8, "topic": "strings", "difficulty": "MEDIUM", "marks": 1,
+      "text": "The longest common prefix of [\"flower\", \"flow\", \"flight\"] is:",
+      "options": ["\"flow\"", "\"fl\"", "\"flower\"", "\"\""],
+      "correct_index": 1,
+      "explanation": "The three strings share the prefix 'fl' but 'flow' does not match 'flight' at position 2." },
+
+    { "order": 9, "topic": "strings", "difficulty": "MEDIUM", "marks": 1,
+      "text": "Is \"abc\" a subsequence of \"ahbgdc\"?",
+      "options": ["Yes", "No", "Only if the text is sorted", "Only if the pattern is a substring"],
+      "correct_index": 0,
+      "explanation": "The characters a, b, c appear in order in the text." },
+
+    { "order": 10, "topic": "strings", "difficulty": "MEDIUM", "marks": 1,
+      "text": "For \"leetcode\", the index of the first non-repeating character is:",
+      "options": ["0", "1", "2", "3"],
+      "correct_index": 0,
+      "explanation": "'l' appears exactly once, at index 0; every other character repeats." },
+
+    { "order": 11, "topic": "strings", "difficulty": "HARD", "marks": 1,
+      "text": "To verify that a multi-character ransom note can be formed from a magazine, the minimum required data structure is:",
+      "options": ["A set of characters", "A frequency map (or array) of characters", "A sorted list of characters", "A single character variable"],
+      "correct_index": 1,
+      "explanation": "Duplicate letters in the note must consume magazine letters one-for-one, which requires counting frequencies." },
+
+    { "order": 12, "topic": "strings", "difficulty": "HARD", "marks": 1,
+      "text": "The minimum time complexity to determine if two length-n strings are anagrams (lowercase English alphabet):",
+      "options": ["O(n log n), by sorting both", "O(n), by a single frequency count", "O(n^2), by nested loops", "O(2^n)"],
+      "correct_index": 1,
+      "explanation": "One pass builds the count, a second pass checks it; the alphabet size is constant." }
+  ]
+}

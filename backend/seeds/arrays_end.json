@@ -1,0 +1,88 @@
+{
+  "assessment": {
+    "kind": "SECTION_END",
+    "section_slug": "arrays",
+    "title": "Arrays — Section-End Assessment",
+    "description": "12 MCQs. Passing threshold 70% is required alongside 10/12 problems completed to unlock Strings.",
+    "total_marks": 12,
+    "pass_ratio": 0.70,
+    "duration_minutes": 20
+  },
+  "distribution": {
+    "by_topic": { "arrays": 12 },
+    "by_difficulty": { "EASY": 4, "MEDIUM": 6, "HARD": 2 }
+  },
+  "questions": [
+    { "order": 1, "topic": "arrays", "difficulty": "EASY", "marks": 1,
+      "text": "For an array `arr` of length n (0-indexed), the last element is accessed as:",
+      "options": ["arr[n]", "arr[n-1]", "arr[0]", "arr.last"],
+      "correct_index": 1,
+      "explanation": "The valid indices are 0..n-1, so the last is arr[n-1]." },
+
+    { "order": 2, "topic": "arrays", "difficulty": "EASY", "marks": 1,
+      "text": "The 'Two Sum' problem asks for:",
+      "options": ["The sum of two arrays", "Indices of two numbers that add up to a target", "The two identical elements of an array", "The maximum sum pair"],
+      "correct_index": 1,
+      "explanation": "Given nums and target, return the indices i,j with nums[i] + nums[j] = target." },
+
+    { "order": 3, "topic": "arrays", "difficulty": "EASY", "marks": 1,
+      "text": "The running sum of [1, 2, 3, 4] is:",
+      "options": ["[1, 2, 3, 4]", "[1, 3, 6, 10]", "[10, 6, 3, 1]", "[4, 7, 9, 10]"],
+      "correct_index": 1,
+      "explanation": "Each output element is the sum of all input elements up to and including that index." },
+
+    { "order": 4, "topic": "arrays", "difficulty": "EASY", "marks": 1,
+      "text": "The 'Contains Duplicate' problem returns true when:",
+      "options": ["All elements are unique", "Some value appears at least twice", "The array is sorted", "The array contains zero"],
+      "correct_index": 1,
+      "explanation": "Presence of any duplicated value constitutes a duplicate." },
+
+    { "order": 5, "topic": "arrays", "difficulty": "MEDIUM", "marks": 1,
+      "text": "After moving all zeroes of [0, 1, 0, 3, 12] to the end while preserving the order of non-zero elements, the result is:",
+      "options": ["[0, 0, 1, 3, 12]", "[1, 3, 12, 0, 0]", "[12, 3, 1, 0, 0]", "[1, 3, 0, 0, 12]"],
+      "correct_index": 1,
+      "explanation": "Only zeros are moved to the end; the relative order of 1, 3, 12 is preserved." },
+
+    { "order": 6, "topic": "arrays", "difficulty": "MEDIUM", "marks": 1,
+      "text": "For prices [7, 1, 5, 3, 6, 4], the maximum profit achievable by one buy followed by one later sell is:",
+      "options": ["4", "5", "6", "7"],
+      "correct_index": 1,
+      "explanation": "Buy at 1 and sell at 6 gives a profit of 5." },
+
+    { "order": 7, "topic": "arrays", "difficulty": "MEDIUM", "marks": 1,
+      "text": "The in-place 'remove duplicates from sorted array' algorithm uses which invariant?",
+      "options": ["Two pointers: one scans, one marks the write position for unique values", "A hash set is required", "Binary search finds duplicates", "Recursion swaps adjacent elements"],
+      "correct_index": 0,
+      "explanation": "Because the array is sorted, the write pointer only advances when a new distinct value is encountered." },
+
+    { "order": 8, "topic": "arrays", "difficulty": "MEDIUM", "marks": 1,
+      "text": "Using Kadane's algorithm on [-2, 1, -3, 4, -1, 2, 1, -5, 4], the maximum subarray sum is:",
+      "options": ["4", "5", "6", "7"],
+      "correct_index": 2,
+      "explanation": "The subarray [4, -1, 2, 1] achieves the maximum sum of 6." },
+
+    { "order": 9, "topic": "arrays", "difficulty": "MEDIUM", "marks": 1,
+      "text": "For 'Number of Good Pairs' on the array [1, 2, 3, 1, 1, 3], the count of pairs (i < j) with nums[i] = nums[j] is:",
+      "options": ["2", "3", "4", "6"],
+      "correct_index": 2,
+      "explanation": "Three 1s contribute C(3,2) = 3 pairs; two 3s contribute C(2,2) = 1 pair; total 4." },
+
+    { "order": 10, "topic": "arrays", "difficulty": "MEDIUM", "marks": 1,
+      "text": "For 'Find Numbers with Even Number of Digits' on [12, 345, 2, 6, 7896], the count of qualifying numbers is:",
+      "options": ["1", "2", "3", "4"],
+      "correct_index": 1,
+      "explanation": "12 (two digits) and 7896 (four digits) are even-length; the others are odd-length." },
+
+    { "order": 11, "topic": "arrays", "difficulty": "HARD", "marks": 1,
+      "text": "The best achievable time complexity for the unsorted 'Two Sum' problem, with no constraints on extra space, is:",
+      "options": ["O(1)", "O(n), using a hash map (average case)", "O(n log n), by sorting", "O(n^2), which is unavoidable"],
+      "correct_index": 1,
+      "explanation": "A single pass stores each value and looks up target minus value in the hash map, giving expected O(n)." },
+
+    { "order": 12, "topic": "arrays", "difficulty": "HARD", "marks": 1,
+      "text": "In Kadane's algorithm, the invariant maintained at each index is:",
+      "options": ["current_sum tracks the sum of the entire array so far", "current_sum tracks the maximum subarray sum ending at the current index; max_sum tracks the overall maximum", "current_sum is always non-negative", "current_sum equals max_sum at every step"],
+      "correct_index": 1,
+      "explanation": "current_sum is reset to the current element when it would be smaller than the running sum, while max_sum stores the best seen so far." }
+  ]
+}
